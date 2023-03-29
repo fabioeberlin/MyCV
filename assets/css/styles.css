@@ -47,9 +47,11 @@ p{
 }
 
 .avatar {
+    position: absolute;
     width: 20rem;
     border-radius: 5rem;
     border: 2px solid #fff;
+    background-color: bisque;
 }
 
 .menu {
@@ -77,8 +79,14 @@ p{
 
 .head-box {
     min-height: 25rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 3rem 3rem 0 0;
+}
+
+.head-box-two {
+    min-height: 25rem;
     background-color: #eee;
-    border-radius: 3rem;
+    
 }
 
 .head-content {
@@ -88,10 +96,11 @@ p{
     gap: 3rem;
 }
 
-.head-text-content {
+.text-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 3rem;
 }
 
 .buttom {
@@ -111,5 +120,17 @@ p{
 .buttom a:hover {
     background-color: #ccc;
 }
+
+.head-content-two  {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 3rem;
+    gap: 3rem;
+}
+
+
+
+
+
 
 
