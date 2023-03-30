@@ -144,7 +144,8 @@ p{
 }
 
 .scroll90 {
-    width: 40rem;
+    position: relative;
+    width: 90%;
     height: 2rem;
     background-color: #4f7573;
     border-radius: 1rem;
@@ -155,7 +156,7 @@ p{
 }
 
 .scroll80 {
-    width: 35rem;
+    width: 80%;
     height: 2rem;
     background-color: #4f7573;
     border-radius: 1rem;
@@ -166,7 +167,7 @@ p{
 }
 
 .scroll70 {
-    width: 30rem;
+    width: 70%;
     height: 2rem;
     background-color: #4f7573;
     border-radius: 1rem;
@@ -207,8 +208,9 @@ p{
 }
 
 .contact-img {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: #eee;
 }
 
@@ -279,6 +281,10 @@ button a {
 button:hover {
     background-color: #243635;
 } 
+
+.text-footer p {
+    font-size: 1rem;
+}
 
 
 @media (max-width: 790px){
