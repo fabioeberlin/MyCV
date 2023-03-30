@@ -5,6 +5,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body, h1, h2, h3, h4 {
@@ -50,11 +51,20 @@ p{
 }
 
 .avatar {
-    position: absolute;
-    width: 16rem;
-    border-radius: 5rem;
+    max-width: 14.3rem;
+    max-height: 19rem;
+    overflow: hidden;
+    border-radius: 1.6rem;
     border: 2px solid #fff;
     background-color: bisque;
+}
+
+.avatar img {
+    transition: all 300ms ease-in-out;
+}
+
+.avatar img:hover {
+    transform: translate(3%, 3%) scale(1.2) rotate(5deg);
 }
 
 .menu {
@@ -75,9 +85,17 @@ p{
 }
 
 .menu ul li img {
-  display: block;
-  height: 3rem;
-  padding-left: 1.5rem;
+    display: block;
+    height: 3rem;
+    padding-left: 1.5rem;
+}
+
+.menu ul li img:hover {
+    transition: all 300ms ease-in-out; 
+}
+
+.menu ul li img:hover {
+    transform: translate(3%, 3%) scale(1.2) rotate(5deg);
 }
 
 .box-one {
