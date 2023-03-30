@@ -144,7 +144,6 @@ p{
 }
 
 .scroll90 {
-    position: relative;
     width: 90%;
     height: 2rem;
     background-color: #4f7573;
@@ -153,6 +152,7 @@ p{
     align-items: center;
     color: #fff;
     font-size: 1.4rem;
+    
 }
 
 .scroll80 {
@@ -197,16 +197,38 @@ p{
     max-width: 90rem;
     margin: 0 auto;
     padding: 3rem;
-    border-left: 1px solid #4f7573;
+    border-left: 2px solid #4f7573;
 }
 
 .card-body {
-    border: 1px solid #4f7573;
-    border-left: 1px solid crimson;
+    border: 1.5px solid #4f7573;
+    border-left: 2px solid #243635;
+    border-radius: 0.5rem;
     padding: 2rem;
     margin: 1rem;
 }
 
+.card-body:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.title-card {
+    color: #243635;
+    position: relative;
+  }
+
+.title-card::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 999px;
+    left: -7rem;
+    border: 3px solid #243635;
+  }
+
+  
 .contact-img {
     display: flex;
     flex-direction: column;
@@ -215,7 +237,7 @@ p{
 }
 
 .contact-img img {
-    max-width: 40rem;
+    width: 100%;
     padding: 0.5rem;
 }
 
@@ -245,6 +267,12 @@ p{
 
 .form-group {
     flex: 1 1 32rem;
+}
+
+.form-grid legend {
+    font-style: italic;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
 }
 
 .form-group label {
