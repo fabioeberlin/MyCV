@@ -67,7 +67,7 @@
         <h2 class="title">Habilidades profissionais</h2>
         <div class="box-three">
             <div class="content-three">
-                <div>
+                <div class="skill">
                     <span class="text">HTML5</span>
                     <div class="scroll90">90%</div>
                     <span class="text">CSS3</span>
@@ -143,25 +143,48 @@
             </div>
     </section>
 
-    <section class="main-container">
-        <h2 id="contato" class="title">Contato</h2>
-        <div class="box-two">
-            <div class="content-two">
-                <div>
-                    <form class="contact">
-                        <input type="text" name="name" id="name" placeholder="Digite seu nome">
-                        <input type="email" name="email" id="email" placeholder="Digite seu email">
-                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
-                        <button>Enviar</button>
-                    </form>
-                </div>
-                    <div class="text-content">
-                    <p>Email: fabioeberlin@gmail.com</p>
-                    <p>Whatsapp: (015) 99702.1196</p>
-                    <p>Localização: Sorocaba/SP</p>  
-                    </div>
+    <section id="contato" class="main-container">
+        <h2 class="title">Contato</h2>
+        <div class="contact-img">
+            <div class="contato-msg">
+                <h3>Envie uma mensagem!!</h3>
             </div>
+            <img src="assets/img/dev.svg" alt="Desenvolvedor atuando na sua area de trabalho">
         </div>
+            <div class="box-two">
+                <div class="content-three">
+                    <div class="contact-form">
+                        <fieldset class="form-grid">
+                            <legend>Contactar me</legend>
+                            <div class="form-group">
+                                <label for="first name">Nome: </label>
+                                <input type="text" name="first name" id="first-name">
+                            </div>
+                            <div class="form-group">
+                                <label for="last name">Sobrenome: </label>
+                                <input type="text" name="last name" id="last-name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail: </label>
+                                <input type="email" name="email" id="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Mensagem: </label>
+                                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit">Enviar a mensagem</button>
+                            </div>
+                        </fieldset>
+                   
+                    </div>
+                        <div class="text-content">
+                        <p>Email: fabioeberlin@gmail.com</p>
+                        <p>Whatsapp: (015) 99702.1196</p>
+                        <p>Localização: Sorocaba/SP</p>  
+                        </div>
+                </div>
+            </div>
     </section> 
 
     <footer>

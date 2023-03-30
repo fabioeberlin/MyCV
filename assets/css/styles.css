@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -130,12 +131,10 @@ p{
 }
 
 .content-three {
-    display: flex;
-    flex: 2;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     padding: 3rem;
-    
+    gap: 3rem
 }
 
 .text-content {
@@ -207,62 +206,88 @@ p{
     margin: 1rem;
 }
 
+.contact-img {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #eee;
+}
+
+.contact-img img {
+    max-width: 40rem;
+    padding: 0.5rem;
+}
+
 .contact {
     display: flex;
     flex-direction: column;
-    flex: 2;
+    justify-content: center;
 }
 
-.contact input {
-    height: 2rem;
-    margin: 1rem;
-    width: 50rem;   
+.contato-msg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.contact textarea {
-    height: 20rem;
-    margin: 1rem;
-    width: 50rem;
+.contato-msg h3 {
+    padding-left: 3rem;
 }
 
-.contact button {
-    width: 15rem;
-    margin: 1rem;
+.contact-form .form-grid {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.form-group {
+    flex: 1 1 32rem;
+}
+
+.form-group label {
+    display: block;
+}
+
+.form-group input,
+.form-group textarea {
+    border: none;
+    background-color: #fff;
+    padding: 1.5rem 2rem;
+    width: 100%;
+}
+
+.form-group button {
+    cursor: pointer;
+}
+
+button {
+    border: none;
     background-color: #4f7573;
-    border-style: none;
-    color: #fff;
-    padding: 1rem;
+    padding: 1.5rem 1rem;
+    margin-right: 1rem;
     border-radius: 0.5rem;
-}
-
-.contact button:hover {
-    background-color: #263837;
-}
-
-::placeholder {
-    font-size: 1.2rem;
-    font-family: 'Poppins', sans-serif;
-}
-
-.heading button {
-    width: 15rem;
-    background-color: #4f7573;
-    border-style: none;
     color: #fff;
-    padding: 1rem;
-    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    transition: all 300ms ease-in-out;
 }
 
-.heading button:hover {
-    background-color: #263837;
-}
-
-.heading button a {
+button a {
     color: #fff;
 }
 
-.space-buttom {
-    margin-bottom: 10rem;
+button:hover {
+    background-color: #243635;
+} 
+
+
+@media (max-width: 790px){
+    .content-one, .content-two, .content-three, .contact-img {
+        grid-template-columns: 1fr;
+    }
+    .heading button {
+        margin-bottom: 2rem;
+    }
 }
 
 
