@@ -126,24 +126,6 @@ p{
     justify-content: center;
 }
 
-.buttom {
-    margin-top: 3rem;
-    padding: 1rem;
-    border-radius: 0.5rem;
-    background-color: #4f7573;
-    font-weight: 600;
-    border-style: none;
-    color: #fff;
-}
-
-.buttom a {
-    color: #fff;
-}
-
-.buttom a:hover {
-    background-color: #ccc;
-}
-
 .scroll90 {
     width: 40rem;
     height: 2rem;
@@ -202,9 +184,72 @@ p{
 
 .card-body {
     border: 1px solid #4f7573;
+    border-left: 1px solid crimson;
     padding: 2rem;
     margin: 1rem;
 }
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+
+.contact input {
+    height: 2rem;
+    margin: 1rem;
+    width: 50rem;   
+}
+
+.contact textarea {
+    height: 20rem;
+    margin: 1rem;
+    width: 50rem;
+}
+
+.contact button {
+    width: 15rem;
+    margin: 1rem;
+    background-color: #4f7573;
+    border-style: none;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.contact button:hover {
+    background-color: #263837;
+}
+
+::placeholder {
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.heading button {
+    width: 15rem;
+    background-color: #4f7573;
+    border-style: none;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.heading button:hover {
+    background-color: #263837;
+}
+
+.heading button a {
+    color: #fff;
+}
+
+.space-buttom {
+    margin-bottom: 10rem;
+}
+
+
+
+
 
 
 
